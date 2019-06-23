@@ -28,7 +28,7 @@ app.set('view engine', 'handlebars');
 
 app.use('/',index);
 
-const port = 3000;
+var port = process.env.PORT||3000;
 
 app.listen(port,() => {
  console.log('server listening on port ',port);
